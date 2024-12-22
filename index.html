@@ -9,25 +9,36 @@
     <meta name="author" content="Filippo Siano">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ac404aceb0.js" crossorigin="anonymous"></script>
-    
     <script src="script.js"></script>
     <title>Filippo Siano | Sito web ufficiale</title>
 </head>
 <body>
     <section class="main">
-        <div>
+        <div class="left">
           <figure>
             <img src="" alt="Immagine del profilo di Filippo Siano">
             <figcaption>Filippo Siano
             </figcaption>
           </figure>
           <div class="social-links">
-            <a href=""><i class="fa-brands fa-github" id="my-animated-icon" style="--fa-animation-duration: 2s;" aria-hidden="true"></i>aaa</a>
+            <a href=""><i class="fa-brands fa-github" id="linkedin" style="--fa-animation-duration: 2s;" aria-hidden="true"></i></a>
+            <a href=""><i class="fa-brands fa-github" id="instagram" style="--fa-animation-duration: 2s;" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="right-up">
+            <h1>Ciao👋🏻</h1>
+            <h2>io sono Filippo Siano</h2>
+            <h3>sono appassionato di</h3> <span id="typing-text"></span><span class="cursor">|</span> 
+          </div>
+          <div class="right-down">
+            <p>Benvenuto sul mio sito web ufficiale. Qui troverai: i <a href="#projects">progetti</a> a cui ho lavorato, le <a href="#skills">competenze</a> che ho acquisito e i <a href="#contacts">contatti</a> per contattarmi.</p>
           </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <img src="" alt="Immagine del progetto">
@@ -38,7 +49,57 @@
 
     </section>
 
-    <section> </section>
+    <section id="skills"> 
+        <h2>Skills</h2>
+        <div class="skill">
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-css3" aria-hidden="true"></i>
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-js" aria-hidden="true"></i>
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-php" aria-hidden="true"></i>
+          <p>PHP</p>
+        </div>
+        <!-- <div class="skill">
+          <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+          <p>Stata</p>
+        </div> -->
+        <div class="skill">
+          <i class="fa-brands fa-figma" aria-hidden="true"></i>
+          <p>Figma</p>
+        </div>
+        <div class="skill">
+          <img src="img/canva-icon.svg" alt="canva-icon" style="width: 20px;">
+          <p>Canva</p>
+        </div>
+        <div class="skill">
+          <img src="img/latex-svgrepo-com.svg" alt="latex-icon" style="width: 50px;">
+          <p>LaTeX</p>
+        </div>
+        <!-- <div class="skill">
+            <i class="fa-brands fa-react" aria-hidden="true"></i>
+            <p>React</p>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-node" aria-hidden="true"></i>
+            <p>Node.js</p>
+        </div>
+        <div class="skill">
+            <i class="fa-brands fa-python" aria-hidden="true"></i>
+            <p>Python</p> -->
+        </div>
+        </div>
+
+
+    </section>
+     
 
     <section class="contacts">
         <h2>Contacts</h2>
@@ -46,5 +107,7 @@
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <p>
     </section>
+
+
 </body>
 </html>
