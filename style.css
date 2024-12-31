@@ -71,25 +71,40 @@ nav > ul {
     display: flex;
     justify-content: space-around;
     padding: 0;
-    width: 100vw;
+    width: 30vw;
+
 }
 
 li > a {
     text-decoration: none;
     color: var(--quaternary);
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 15px;
 }
+
+li > a:hover {
+    text-decoration: none;
+    color: var(--main);
+    background-color: var(--quaternary);
+    transition: 0.2s ease;
+}
+
 
 .navbar {
     position: sticky;
-    top: 0px;
-    padding: 0px;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     background-color: var(--secondary);
     z-index: 2;
-    margin: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 50%;
 }
 
 .social {
@@ -176,4 +191,65 @@ li > a {
 
 #typing-text, .cursor {
     font-size: 50px;
+}
+
+/*Stile progetti*/
+
+#projects-section {
+    text-align: center;
+    padding-top: 100px; /* Aggiungi questo */
+    margin-top: -100px; /* Aggiungi questo */
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(87, 125, 170, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.more-projects-button {
+    margin: 0px;
+    background-color: var(--quaternary);
+    color: var(--main);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Sezione skills*/ 
+ 
+#skills-section {
+    text-align: center;
+    padding-top: 100px; /* Aggiungi questo */
+    margin-top: -100px; /* Aggiungi questo */
+}
+
+.skill {
+    border-radius: 25px;
+    border: 2px solid var(--quaternary);
+    width: min-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill i {
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
