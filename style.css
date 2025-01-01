@@ -79,7 +79,7 @@ li > a {
     text-decoration: none;
     color: var(--quaternary);
     background-color: var(--primary);
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 15px;
 }
 
@@ -90,7 +90,6 @@ li > a:hover {
     transition: 0.2s ease;
 }
 
-
 .navbar {
     position: sticky;
     display: flex;
@@ -100,11 +99,13 @@ li > a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    background-color: var(--secondary);
+    background-color: rgba(3, 51, 110, 0.63);
     z-index: 2;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 50px;
     width: 50%;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--quaternary);
 }
 
 .social {
@@ -124,69 +125,6 @@ li > a:hover {
 
 .right {
     width: 75%;
-}
-
-/* From Uiverse.io by Madflows */ 
-.left a {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    margin: 25px;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--quaternary); /* Colore del testo */
-    text-transform: uppercase;
-    padding: 1.25em 2em;
-    background: var(--secondary); /* Sfondo pulsante */
-    border: 2px solid var(--tertiary); /* Bordo pulsante */
-    border-radius: 0.75em;
-    transform-style: preserve-3d;
-    transition: 
-        transform 150ms cubic-bezier(0, 0, 0.58, 1), 
-        background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-.left a::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--tertiary); /* Sfondo secondario (ombra 3D) */
-    border-radius: inherit;
-    box-shadow: 0 0 0 2px var(--main), 0 0.625em 0 0 var(--secondary); /* Ombra pulsante */
-    transform: translate3d(0, 0.75em, -1em);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-.left a:hover {
-    background: var(--tertiary); /* Sfondo giallo chiaro */
-    color: var(--secondary); /* Testo blu scuro */
-    transform: translate(0, 0.25em);
-}
-
-.left a:hover::before {
-    box-shadow: 0 0 0 2px var(--main), 0 0.5em 0 0 var(--secondary); /* Ombra ridotta */
-    transform: translate3d(0, 0.5em, -1em);
-}
-
-.left a:active {
-    background: var(--main); /* Sfondo blu molto scuro per il click */
-    color: var(--quaternary); /* Testo chiaro */
-    transform: translate(0em, 0.75em);
-}
-
-.left a:active::before {
-    box-shadow: 0 0 0 2px var(--main), 0 0 var(--secondary); /* Ombra eliminata */
-    transform: translate3d(0, 0, -1em);
 }
 
 #typing-text, .cursor {
@@ -215,7 +153,8 @@ li > a:hover {
     padding: 10px;
     width: 300px;
     height: 300px;
-    background-color: rgba(87, 125, 170, 0.5);
+    color: #021526;
+    background-color: var(--tertiary);
     backdrop-filter: blur(10px);
     border-radius: 15px;
 }
@@ -253,3 +192,11 @@ li > a:hover {
     font-size: 1.5rem;
     margin-right: 10px;
 }
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
