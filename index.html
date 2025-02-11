@@ -28,16 +28,15 @@
    
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#contacts-section">Contacts</a></li>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#projects-section">🗂️ Projects</a></li>
+                <li><a href="#skills-section">📊 Skills</a></li>
+                <li><a href="#contacts-section">📩 Contacts</a></li>
             </ul>
         </nav>
  
-    <section class="main">
-        
-      <div class="content">
+    <section class="home" id="home">
+      <div class="content" >
         <div class="left">
               <img src="img/test.webp" alt="Immagine del profilo di Filippo Siano">
               <ul class="social">
@@ -52,20 +51,22 @@
             <h2>Mi chiamo Filippo Siano e sono appassionato di:</h2> <span id="typing-text"></span><span class="cursor">|</span> 
           </div>
             <div class="right-down">
-              <p>Benvenuto sul mio sito web ufficiale. Qui troverai: i <a href="#projects-section">progetti</a> a cui ho lavorato, le <a href="#skills">competenze</a> che ho acquisito e i <a href="#contacts">contatti</a> per contattarmi.</p>
+              <p>Benvenuto sul mio sito web ufficiale. <br> <br>
+                Qui puoi trovare i miei progetti, le mie competenze e i miei contatti.
+                Se vuoi saperne di più su di me, continua a leggere!</p>
             </div>
         </div>
       </div>
     </section>
 
     <section id="projects-section">
-        <h2>Featured projects</h2>
+        <h2>🗂️ Featured projects</h2>
         <div class="projects">
             <div class="project">
                 <img src="" alt="Immagine del progetto">
-                <h3>Nome del progetto</h3>
-                <p>Descrizione del progetto</p>
-                <a href="">Link al progetto</a>
+                <h3>Vestiti</h3>
+                <p>E-commerce di un brand di vestiti fittizio inventato da me!</p>
+                <a href="https://filipposiano.github.io/vestiti">Link al progetto</a>
             </div>
             <div class="project">
               <img src="" alt="Immagine del progetto">
@@ -78,28 +79,15 @@
             <img src="" alt="Immagine del progetto">
             <h3>Nome del progetto</h3>
             <p>Descrizione del progetto</p>
-            <a href="">Link al progetto</a>
+            <a href="" class="see-projects-button"><i class="fa-solid fa-link" aria-hidden="true"></i> Link al progetto</a>
         </div>
-        <div class="project">
-          <img src="" alt="Immagine del progetto">
-          <h3>Nome del progetto</h3>
-          <p>Descrizione del progetto</p>
-          <a href="">Link al progetto</a>
-      </div>
-      <div class="project">
-        <img src="" alt="Immagine del progetto">
-        <h3>Nome del progetto</h3>
-        <p>Descrizione del progetto</p>
-        <a href="">Link al progetto</a>
-    </div>
       </div>
       <br>
-      <a href="projects.html" class="more-projects-button">Scoprili tutti</a>
     </section>
 
     <section id="skills-section"> 
-        <h2>Skills</h2>
-        <h3 class="subtitle">Development skills</h3>
+        <h2>📊 Skills</h2>
+        <h3 class="subtitle">👨🏻‍💻 Development skills</h3>
         <div class="skills-container">
           <div class="skill">
               <i class="fa-brands fa-html5" aria-hidden="true"></i>
@@ -172,13 +160,13 @@
     </section>
   
     <section id="contacts-section">
-        <h2>Contatti</h2>
+        <h2>📩 Contatti</h2>
         <form action="">
             <input type="text" placeholder="Nome">
             <input type="text" placeholder="Cognome">
             <input type="email" placeholder="Email">
-            <textarea name="" id="" placeholder="Inserisci qui il tuo messaggio!"></textarea>
-            <button type="submit">Invia</button>
+            <textarea name="messaggio" id="messaggio" placeholder="Inserisci qui il tuo messaggio!"></textarea>
+            <button type="submit"> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Invia</button>
         </form>
     </section>
 

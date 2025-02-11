@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const texts = [
         "tecnologia",
         "web design",
-        "innovazione sociale"
+        "innovazione sociale",
+        "comunicazione"
     ];
     
     let currentTextIndex = 0;
