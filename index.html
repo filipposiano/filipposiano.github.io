@@ -23,41 +23,35 @@
       <title>Filippo Siano | Sito web ufficiale</title>
 </head>
 <body>
-    <!-- <div class="circle" id="circle"></div> -->
-
-   
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">🏠 Home</a></li>
-                <li><a href="#projects-section">🗂️ Projects</a></li>
-                <li><a href="#skills-section">📊 Skills</a></li>
-                <li><a href="#contacts-section">📩 Contacts</a></li>
-            </ul>
-        </nav>
- 
-    <section class="home" id="home">
+  <div class="bento-grid">
+    
+    <section id="home">
       <div class="content" >
         <div class="left">
               <img src="img/test.webp" alt="Immagine del profilo di Filippo Siano">
-              <ul class="social">
-              <li><a href=""><i class="fa-regular fa-pen-to-square"></i> Blog</a></li>
-              <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-              <li><a href="https://github.com/filipposiano"><i class="fa-brands fa-github" id="my-animated-icon" style="--fa-animation-duration: 2s;" aria-hidden="true"></i> GitHub</a></li>
-              </ul>
+              
         </div>
         <div class="right">
           <div class="right-up">
             <h1>Ciao👋🏻</h1>
-            <h2>Mi chiamo Filippo Siano e sono appassionato di:</h2> <span id="typing-text"></span><span class="cursor">|</span> 
+            <h2>Filippo Siano</h2> <span id="typing-text"></span><span class="cursor">|</span> 
           </div>
             <div class="right-down">
-              <p>Benvenuto sul mio sito web ufficiale. <br> <br>
-                Qui puoi trovare i miei progetti, le mie competenze e i miei contatti.
-                Se vuoi saperne di più su di me, continua a leggere!</p>
+              <p>Benvenuto sul mio sito web ufficiale!
             </div>
         </div>
       </div>
     </section>
+
+    <section id="useful-links-section">
+        <div class="useful-links">
+          <ul class="social">
+            <li><a href=""><i class="fa-regular fa-pen-to-square"></i> Blog</a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/filipposiano"><i class="fa-brands fa-github" id="my-animated-icon" style="--fa-animation-duration: 2s;" aria-hidden="true"></i> GitHub</a></li>
+            </ul>
+        </div>
+        </section>  
 
     <section id="projects-section">
         <h2>🗂️ Featured projects</h2>
@@ -65,7 +59,7 @@
             <div class="project">
                 <img src="" alt="Immagine del progetto">
                 <h3>Vestiti</h3>
-                <p>E-commerce di un brand di vestiti fittizio inventato da me!</p>
+                <p>E-commerce di un brand di vestiti fittizio inventato da me! </p>
                 <a href="https://filipposiano.github.io/vestiti">Link al progetto</a>
             </div>
             <div class="project">
@@ -135,7 +129,7 @@
             <p>Stata</p>
           </div>
         </div> -->
-        <h3 class="subtitle">Design skills</h3>
+        <h3 class="subtitle">🎨 Design skills</h3>
         <div class="skills-container">
         <div class="skill">
           <i class="fa-brands fa-figma" aria-hidden="true"></i>
@@ -146,21 +140,16 @@
           <p>Canva</p>
         </div>
         </div>
-        <h3 class="subtitle">Other skills</h3>
+        <h3 class="subtitle">🛠️ Other skills</h3>
         <div class="skills-container">
         <div class="skill">
           <img src="img/latex-svgrepo-com.svg" alt="latex-icon" style="width: 50px;">
           <p>LaTeX</p>
         </div>
-        </div>
-        </div>
-        </div>
-
-
     </section>
   
     <section id="contacts-section">
-        <h2>📩 Contatti</h2>
+        <h2>📩 Contattami!</h2>
         <form action="">
             <input type="text" placeholder="Nome">
             <input type="text" placeholder="Cognome">
@@ -169,11 +158,11 @@
             <button type="submit"> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Invia</button>
         </form>
     </section>
+  </div>
 
-    <footer>
-        <p>© 2025 Filippo Siano</p>
-    </footer>
-    
+  <footer>
+    <p>© 2025 Filippo Siano</p>
+  </footer>
 </body>
 
 </html>
