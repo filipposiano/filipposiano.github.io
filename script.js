@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "tecnologia",
         "web design",
         "innovazione sociale",
-        "comunicazione"
+        "comunicazione",
+        "società"
     ];
     
     let currentTextIndex = 0;
