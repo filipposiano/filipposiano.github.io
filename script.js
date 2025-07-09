@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "innovation",
         "communication",
         "society"
-    ];
+        ];
     
     let currentTextIndex = 0;
     let currentCharIndex = 0;
