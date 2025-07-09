@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a webpage">
     <meta name="keywords" content="webpage, html, css, javascript">
+    
     <link rel="icon" href="img/favicon1.svg" type="image/x-icon">
+
     <meta name="author" content="Filippo Siano">
-    <link rel="stylesheet" href="style.css">
+    
+
+   <!-- Collegamento bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ac404aceb0.js" crossorigin="anonymous"></script>
+    
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
-      <!-- Google tag (gtag.js) -->
+    
+  <!-- Collegamento mio stile -->
+   <link rel="stylesheet" href="style.css">
+    
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WSL6YQ3LM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,134 +33,124 @@
 
     gtag('config', 'G-8WSL6YQ3LM');
   </script>
-      <title>Filippo Siano | Official website</title>
+
+    <title>Filippo Siano | Official website</title>
 </head>
-<body>
-  <div class="bento-grid">
-    <section id="home">
-      <div class="content" >
-        <div class="left">
-              <img src="img/test.webp" alt="Immagine del profilo di Filippo Siano">
-              
-        </div>
-        <div class="right">
-          <div class="right-up">
-            <h1>Hi👋🏻, I'm</h1>
-            <h2>Filippo Siano, and I'm passionate about </h2> <span id="typing-text"></span><span class="cursor">|</span> 
-          </div>
-            <div class="right-down">
-              <p>Welcome to my personal website!
-            </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="useful-links-section">
-          <ul class="social">
-            <li class="find-me-text">Find me here 👉🏼</li>
-            <li><a href=""><i class="fa-regular fa-pen-to-square"></i>&nbsp;Blog</a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a></li>
-            <li><a href="https://github.com/filipposiano"><i class="fa-brands fa-github" id="my-animated-icon" style="--fa-animation-duration: 2s;" aria-hidden="true"></i>&nbsp;GitHub</a></li>
-            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a></li>
-          </ul>
-        </section>  
+<body class="p-3 container-fluid">
 
-    <section id="projects-section">
-        <h2>🗂️ Featured projects</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="img/Frame 6.png" alt="Immagine del progetto">
-                    <h3>Vestiti</h3>
-                    <p>E-commerce </p>
-                  <a href="https://filipposiano.github.io/vestiti"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-      </div>
-    </section>
-
-    <section id="skills-section"> 
-        <h2>📊 Skills</h2>
-        <h3 class="subtitle">👨🏻‍💻 Development skills</h3>
-        <div class="skills-container">
-          <div class="skill">
-              <i class="fa-brands fa-html5" aria-hidden="true"></i>
-              <p>HTML</p>
-          </div>
-          <div class="skill">
-              <i class="fa-brands fa-css3" aria-hidden="true"></i>
-              <p>CSS</p>
-          </div>
-          <div class="skill">
-              <i class="fa-brands fa-js" aria-hidden="true"></i>
-              <p>JavaScript</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-php" aria-hidden="true"></i>
-            <p>PHP</p>
-          </div>
-          <!-- <div class="skill">
-            <i class="fa-brands fa-react" aria-hidden="true"></i>
-            <p>React</p>
-        </div>
-        <div class="skill">
-            <i class="fa-brands fa-node" aria-hidden="true"></i>
-            <p>Node.js</p>
-        </div>
-        <div class="skill">
-            <i class="fa-brands fa-python" aria-hidden="true"></i>
-            <p>Python</p> -->
-        </div>
-        <!-- <div class="data">Data analysis skills
-          <div class="skill">
-            <i class="fa-brands fa-python" aria-hidden="true"></i>
-            <p>Python</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-r-project" aria-hidden="true"></i>
-            <p>R</p>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-microsoft" aria-hidden="true"></i>
-            <p>Excel</p>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-            <p>Stata</p>
-          </div>
-        </div> -->
-        <h3 class="subtitle">🎨 Design skills</h3>
-        <div class="skills-container">
-        <div class="skill">
-          <i class="fa-brands fa-figma" aria-hidden="true"></i>
-          <p>Figma</p>
-        </div>
-        <div class="skill">
-          <img src="img/canva-icon.svg" alt="canva-icon" style="width: 20px;" aria-hidden="true">
-          <p>Canva</p>
-        </div>
-        </div>
-        <h3 class="subtitle">🛠️ Other skills</h3>
-        <div class="skills-container">
-        <div class="skill">
-          <img src="img/latex-svgrepo-com.svg" alt="latex-icon" style="width: 50px;">
-          <p>LaTeX</p>
-        </div>
-    </section>
-  
-    <section id="contacts-section">
-        <h2>📩 Contattami!</h2>
-        <form action="">
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Cognome">
-            <input type="email" placeholder="Email">
-            <textarea name="messaggio" id="messaggio" placeholder="Inserisci qui il tuo messaggio!"></textarea>
-            <button type="submit"> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Invia</button>
-        </form>
-    </section>
-
+  <!-- Social Links -->
+  <div class="section-box text-center">
+    <h5>Find me here 👇🏻</h5>
+    <div class="d-flex justify-content-center flex-wrap gap-2">
+      <a class="btn btn-primary" href="https://noesisblog.substack.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-blog fa-fw me-2"></i> noesis.blog
+      </a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/filippo-siano/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin fa-fw me-2"></i> LinkedIn
+      </a>
+      <a class="btn btn-primary" href="https://github.com/filipposiano" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github fa-fw me-2"></i> GitHub
+      </a>
+    </div>
   </div>
-  <!-- <footer>
-    <p>© 2025 Filippo Siano</p>
-  </footer> -->
-</body>
 
+
+  <!-- Intro + Foto + Progetti -->
+  
+<div class="row">
+    <!-- Intro + Foto -->
+    <div class="col-12 col-md-5">
+      <div class="section-box d-flex flex-column flex-md-row align-items-center gap-4">
+        <img src="img/test.webp" alt="Foto Filippo" class="profile-img">
+        <div>
+          <h4>Hi 👋🏻, I'm <br><strong>Filippo Siano, and I'm passionate about</strong></h4>
+          <div class="typing-container">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </div>
+          <p>Welcome to my personal website!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="section-box">
+<h5>ℹ️ About me</h5>
+    <p>🌍 Naturally curious, I love exploring different worlds — from sociology to computer science, from economics to classical studies. <br>
+  💡 I'm passionate about ideas that connect people, solve problems, and create real impact. With a creative spirit and an analytical mind, I thrive on complex challenges and find satisfaction in crafting effective solutions. <br>
+  📚 I'm always looking to learn, grow, and test myself in dynamic, multidisciplinary environments. I believe in innovation as a driver of social change, and I dream of contributing to sustainable, human-centered, and intelligent solutions.</p>
+      </div>
+    
+    </div>
+    
+  </div>
+   
+  
+  
+
+  <!-- Carousel Progetti -->
+    <div class="col-12">
+      <div class="section-box">
+        <h5>📁 Featured projects</h5>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Frame 6.png" class="d-block w-100" alt="Sito vestiti">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sito web vestiti</h5>
+                <p>Un sito web</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/altro-progetto1.jpg" class="d-block w-100" alt="Progetto 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/altro-progetto2.jpg" class="d-block w-100" alt="Progetto 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  <!-- Skills -->
+  <div class="section-box col-12 col-md-6">
+    <h5>📊 Skills</h5>
+    <div class="skills mb-2">
+      <h6>👨‍💻 Development skills</h6>
+      <span><i class="fa-brands fa-html5"></i>HTML</span>
+      <span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+      <!-- <span><i class="fa-brands fa-js"></i>JavaScript</span> -->
+      <span><i class="fa-brands fa-php"></i>PHP</span>
+    </div>
+    <div class="skills mb-2">
+      <h6>🎨 Design skills</h6>
+      <span><i class="fa-brands fa-figma"></i>Figma</span>
+      <span><i class="fa-solid fa-palette"></i>Canva</span>
+    </div>
+    <div class="skills">
+      <h6>📚 Other skills</h6>
+      <span><i class="fa-solid fa-square-root-variable"></i>LaTeX</span>
+    </div>
+    
+  </div>
+
+  <!-- Contattami -->
+  <div class="section-box text-center col-md-3">
+    <h5>📩 Contattami!</h5>
+    <p>Hai una domanda o vuoi collaborare con me?</p>
+    <a href="mailto:tuamail@example.com" class="btn-mail">
+      <i class="fa-solid fa-envelope"></i> Inviami un'email
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
