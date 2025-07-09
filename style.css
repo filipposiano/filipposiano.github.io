@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --main: #021526;
@@ -104,7 +105,8 @@ padding: 20px;
 }
 
 h5 {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: x-large;
 }
 
 /* Skills */
