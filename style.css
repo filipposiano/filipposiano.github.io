@@ -25,6 +25,10 @@ body {
   padding: 1rem;
 }
 
+h5, p {
+    color: var(--quaternary);
+}
+
 /* Section box styling (cards) */
 .section-box {
   background: rgba(255, 255, 255, 0.1);
@@ -37,6 +41,19 @@ padding: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   color: var(--quaternary); /* mantiene il testo chiaro */
+}
+
+/* Dissolvenza iniziale */
+.section-box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+/* Quando visibile */
+.section-box.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Profile image */

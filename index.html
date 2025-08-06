@@ -123,10 +123,10 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/altro-progetto1.jpg" class="d-block w-100" alt="Progetto 2">
+              <img src="img/Frame 6.png" class="d-block w-100" alt="Progetto 2">
             </div>
             <div class="carousel-item">
-              <img src="img/altro-progetto2.jpg" class="d-block w-100" alt="Progetto 3">
+              <img src="img/Frame 6.png" class="d-block w-100" alt="Progetto 3">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -172,5 +172,20 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.section-box');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    boxes.forEach(box => observer.observe(box));
+  });
+</script>
 </body>
 </html>
