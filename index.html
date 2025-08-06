@@ -33,10 +33,10 @@
 </head>
 
 <body class="p-3 container-fluid">
-
+  <div id="cursor-bg"></div>
   <div class="row">
     <div class="col-12 col-md-7">
-        <div class="section-box text-center">
+        <div class="section-box text-center fade-left">
           <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
             <h5 class="mb-2 mb-md-0 me-md-3 text-center text-md-start flex-shrink-0">📍 Find me here</h5>
             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-end">
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="col 12 col-md-5" id="questions">
-      <div class="section-box text-center">
+      <div class="section-box text-center fade-right">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
             <h5 class="mb-2 mb-md-0 me-md-3 text-center text-md-start flex-shrink-0">📩 Any question?</h5>
             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-end">
@@ -83,7 +83,7 @@
 <div class="row">
     <!-- Intro + Foto -->
     <div class="col-12 col-md-5">
-      <div class="section-box d-flex flex-column flex-md-row align-items-center gap-4">
+      <div class="section-box d-flex flex-column flex-md-row align-items-center gap-4 fade-left">
         <img src="img/filippo.png" alt="Foto Filippo" class="profile-img">
         <div>
           <h4>Hi 👋🏻, I'm <br><strong>Filippo Siano, and I'm passionate about</strong></h4>
@@ -95,7 +95,7 @@
       </div>
     </div>
     <div class="col-md-7">
-      <div class="section-box">
+      <div class="section-box fade-right">
 <h5 class="text-center text-md-start">ℹ️ About me</h5>
     <p class="mb-2">🌍 Naturally curious, I love exploring different worlds — from sociology to computer science, from economics to classical studies.</p>
     <p class="mb-2">📚 I'm always looking to learn, grow, and test myself in dynamic, multidisciplinary environments. I believe in innovation as a driver of social change, and I dream of contributing to sustainable, human-centered, and intelligent solutions.</p>
@@ -185,6 +185,13 @@
     }, { threshold: 0.15 });
 
     boxes.forEach(box => observer.observe(box));
+  });
+</script>
+<script>
+  const cursorBg = document.getElementById('cursor-bg');
+  document.addEventListener('mousemove', (e) => {
+    cursorBg.style.left = e.clientX + 'px';
+    cursorBg.style.top = e.clientY + 'px';
   });
 </script>
 </body>
