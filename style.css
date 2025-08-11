@@ -204,6 +204,21 @@ h5 {
   max-height: 250px;
 }
 
+/* View all button */
+.btn-viewall {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-viewall .arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.btn-viewall:hover .arrow {
+  transform: translateX(8px);
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .typing-container {
