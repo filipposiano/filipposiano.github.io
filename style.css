@@ -219,6 +219,22 @@ h5 {
   transform: translateX(8px);
 }
 
+/* Assicura che il wip-container occupi tutto lo spazio del section-box */
+.wip-container {
+  flex: 1; /* Occupa tutto lo spazio disponibile */
+  display: flex; /* Usa Flexbox per centrare il contenuto */
+  flex-direction: column; /* Disposizione verticale */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra orizzontalmente */
+  width: 100%; /* Assicura che occupi tutta la larghezza */
+  height: 100%; /* Assicura che occupi tutta l'altezza */
+  background: rgba(0, 31, 58, 0.753); /* Colore di sfondo semi-trasparente */
+  backdrop-filter: blur(26px); /* Sfoca solo lo sfondo */
+  -webkit-backdrop-filter: blur(10px); /* Sfoca solo lo sfondo (Safari) */
+  border-radius: inherit; /* Angoli arrotondati */
+  color: var(--quaternary); /* Colore del testo */
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .typing-container {
